@@ -35,6 +35,7 @@ acc = model.score(x_test, y_test)
 predicted = model.predict(x_test)
 names = ["unacc", "acc", "good", "vgood"]
 
+# Accuracy : 95.375723%
 for x in range(len(predicted)):
     print("Predicted:", names[predicted[x]], "Data:", x_test[x], "Actual:", names[y_test[x]])
 
